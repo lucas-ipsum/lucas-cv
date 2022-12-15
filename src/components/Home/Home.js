@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box} from '@mui/material';
 import SkillList from '../SkillList/SkillList';
+import SkillsOverview from '../SkillsOverview/SkillsOverview';
 
 function Home(props) {
 
@@ -9,7 +10,7 @@ function Home(props) {
 return (
 <Box>
     <h1>Home</h1>
-    <SkillList /> 
+    <SkillsOverview />
 </Box>
 
 )

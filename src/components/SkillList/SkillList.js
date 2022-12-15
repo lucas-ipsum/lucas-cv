@@ -6,13 +6,9 @@ import Skills from '../Skills/Skills';
 
 function SkillList(props) {
 // Props
-let programmingSkills = {
-    "JavaScript": 4, 
-    "PHP": 3, 
-    "HTML": 4 
-}
+
 let skillList = []
-for (const [key, value] of Object.entries(programmingSkills)) {
+for (const [key, value] of Object.entries(props.listData)) {
     skillList.push(<Skills name={key} level={value}/>)
 }
 // 
@@ -20,8 +16,8 @@ for (const [key, value] of Object.entries(programmingSkills)) {
 
 // Render Function 
 return (
-    <Box>
-        <Typography variant='h4'>Programmierkenntnisse</Typography>
+    <Box sx={{border: 'solid 1px'}}>
+        <Typography variant='h4'>{props.title}</Typography>
         {skillList}
     </Box>
 )
