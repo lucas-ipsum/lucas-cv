@@ -7,7 +7,10 @@ import Home from './components/Home/Home';
 
 function App() {
   return (
-    <Box>
+    <Box sx={{
+      ml: 5,
+      mr: 5, 
+    }}>
       <Home />
     </Box>
     
