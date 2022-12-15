@@ -14,9 +14,9 @@ let skillArr = [];
 // Set Array with Skill Level  
 for(var i = 0; i < 5; i++) {
     if (i < skillScore) {
-        skillArr.push(<CircleIcon />)
+        skillArr.push(<CircleIcon color='primary'/>)
     } else {
-        skillArr.push(<CircleOutlinedIcon />)
+        skillArr.push(<CircleOutlinedIcon color='primary'/>)
     }
 }
 
