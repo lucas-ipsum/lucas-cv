@@ -17,7 +17,7 @@ for (const [key, value] of Object.entries(props.listData)) {
 // Render Function 
 return (
     <Box sx={{}}>
-        <Paper elevation={4}>
+        <Paper sx={{maxWidth: '440px', minWidth: '350px'}} elevation={4}>
             <Box sx={{p: 2}}>
                 <Typography variant='h4'>{props.title}</Typography>
                 {skillList}

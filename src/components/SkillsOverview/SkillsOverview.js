@@ -15,13 +15,13 @@ let programmingSkills = {
 return (
     <Box>
         <Grid container spacing={4}>
-            <Grid xs={12} sm={12} md={4} item> 
+            <Grid sx={{ display: 'flex', justifyContent: 'center' }} xs={12} sm={10} md={6} item> 
                 <SkillList title="Programmierkenntnisse" listData={programmingSkills}/>
             </Grid>
-
-            <Grid xs={12} sm={12} md={4} item> 
+            <Grid sx={{ display: 'flex', justifyContent: 'center' }} xs={12} sm={10} md={6} item> 
                 <SkillList title="Werkzeuge" listData={programmingSkills}/>
             </Grid>
+
 
         </Grid>
     </Box>
