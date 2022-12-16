@@ -4,13 +4,13 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // MUI 
-import { createTheme } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
 import { ThemeProvider } from '@mui/material'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 // Theme Color
-const theme = createTheme({
+let theme = createTheme({
   palette: {
     primary: {
       main: '#FF7F50'
@@ -20,7 +20,7 @@ const theme = createTheme({
     }
   }
 })
-
+theme = responsiveFontSizes(theme)
 root.render(
   <React.StrictMode>
     <ThemeProvider theme={theme}>
