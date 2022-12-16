@@ -2,8 +2,10 @@ import React from 'react'
 // MUI 
 import { Box, Paper, Grid, Divider } from '@mui/material'; 
 import data from '../../data/cvTimeline';
+// Components
 import TimeLineIcon from './TimeLineItemComponents/TimeLineIcon';
 import TimeLineDate from './TimeLineItemComponents/TimeLineDate';
+import TimeLineEntry from './TimeLineItemComponents/TimeLineEntry';
 
 function TimeLineItem(props) {
 var title = `Wirtschaftsinformatik B.Sc.` ;
@@ -18,7 +20,7 @@ return (
                 <TimeLineIcon />
             </Grid>
             <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineIcon />
+                <TimeLineEntry />
             </Grid>
             <Grid item xs={6}>
                 <Divider sx={{height: '50px', borderColor:'#000000' }} orientation='vertical' /> 
