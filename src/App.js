@@ -8,8 +8,17 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <Box sx={{
-      ml: 5,
-      mr: 5, 
+      maxWidth: '1300px',
+      ml: {
+        xs: 2,
+        sm: 5,
+        lg: '20vw'
+      },
+      mr: {
+        xs: 2,
+        sm: 5,
+        lg: '20vw'
+      }, 
     }}>
       <Home />
     </Box>
