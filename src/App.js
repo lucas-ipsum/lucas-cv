@@ -8,7 +8,7 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <Box sx={{
-
+      maxWidth: '1300px',
       ml: {
         xs: 2,
         sm: 5,
