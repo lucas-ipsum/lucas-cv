@@ -8,3 +8,5 @@ const data = [
         date: '17. März 2017'
     }
 ]
+
+export default data; 
