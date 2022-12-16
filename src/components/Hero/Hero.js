@@ -1,9 +1,11 @@
 import React from 'react'
 // MUI 
-import { Box, Grid } from '@mui/material';
+import { Box, Grid, Avatar } from '@mui/material';
 import style from '../sytle/style';
 import PresentationWindow from '../PresentationWindow/PresentationWindow';
 import Contact from '../Contact/Contact';
+// 
+import profile_img from '../../static/profile_img.jpg'
 
 function Hero(props) {
 
@@ -15,14 +17,24 @@ return (
     }}>
         <Box sx={style}>
             <Grid container>
-                <Grid xs={12} sm={6} >
+                <Grid xs={10} sm={8} >
                     <PresentationWindow /> 
-                </Grid>
-                <Grid xs={12} sm={6} >
-                    <PresentationWindow /> 
-                </Grid>
-                <Grid xs={12} sx={{mt: 3}}>
                     <Contact /> 
+
+                </Grid>
+                <Grid xs={2} sm={4} sx={{display: 'flex', justifyContent: 'flex-end'}} >
+                    <Avatar src={profile_img} sx={{
+                        width: {
+                            xs:'100px',
+                            sm: '200px'
+                        }, 
+                        height: {
+                            xs:'100px',
+                            sm: '200px'
+                        }
+                    }}/>
+                </Grid>
+                <Grid xs={12} sx={{mt: 1}}>
                 </Grid>
             </Grid>
         </Box>
