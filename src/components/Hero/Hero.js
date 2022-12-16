@@ -2,17 +2,18 @@ import React from 'react'
 // MUI 
 import { Box } from '@mui/material';
 import style from '../sytle/style';
+import PresentationWindow from '../PresentationWindow/PresentationWindow';
 
 function Hero(props) {
 
 // Render Function 
 return (
     <Box sx={{
-        backgroundColor: '#66CDAA'
+        minHeight: '300px',
+        backgroundColor: '#4DA1C2'
     }}>
         <Box sx={style}>
-            HI
-
+            <PresentationWindow /> 
         </Box>
     </Box>
 )

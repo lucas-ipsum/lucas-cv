@@ -10,7 +10,6 @@ function Home(props) {
 // Render Function 
 return (
 <Box>
-    <h1>Home</h1>
     <Hero />
     <SkillsOverview />
 
