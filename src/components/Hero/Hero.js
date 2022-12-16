@@ -17,19 +17,25 @@ return (
     }}>
         <Box sx={style}>
             <Grid container>
-                <Grid xs={10} sm={8} >
+                <Grid xs={12} sm={8} >
                     <PresentationWindow /> 
                     <Contact /> 
 
                 </Grid>
-                <Grid xs={2} sm={4} sx={{display: 'flex', justifyContent: 'flex-end'}} >
+                <Grid xs={12} sm={4} sx={{
+                    display: 'flex', 
+                    justifyContent: {
+                        xs: 'center',
+                        sm: 'flex-end',
+                    }
+                    }} >
                     <Avatar src={profile_img} sx={{
                         width: {
-                            xs:'100px',
+                            xs:'150px',
                             sm: '200px'
                         }, 
                         height: {
-                            xs:'100px',
+                            xs:'150px',
                             sm: '200px'
                         }
                     }}/>
