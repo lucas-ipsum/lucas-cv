@@ -2,6 +2,7 @@ import React from 'react'
 // MUI 
 import { Box, Grid } from '@mui/material';
 import SkillList from '../SkillList/SkillList';
+import style from '../sytle/style';
 
 function SkillsOverview(props) {
 // Data
@@ -13,7 +14,7 @@ let programmingSkills = {
 
 // Render Function 
 return (
-    <Box>
+    <Box sx={style}>
         <Grid container spacing={4}>
             <Grid sx={{ display: 'flex', justifyContent: 'center' }} xs={12} sm={10} md={6} item> 
                 <SkillList title="Programmierkenntnisse" listData={programmingSkills}/>
