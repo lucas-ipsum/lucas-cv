@@ -24,10 +24,10 @@ for(var i = 0; i < 5; i++) {
 return (
     <Box>
     <Grid container>
-        <Grid item xs={6}>
+        <Grid item xs={5}>
             <Typography variant='h5'>{skillName}</Typography>
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={5}>
             {skillArr}
         </Grid>
     </Grid>

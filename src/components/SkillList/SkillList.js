@@ -1,6 +1,6 @@
 import React from 'react'
 // MUI 
-import { Box, Typography } from '@mui/material';
+import { Box, Typography, Paper } from '@mui/material';
 import Skills from '../Skills/Skills';
 // Components
 
@@ -16,9 +16,13 @@ for (const [key, value] of Object.entries(props.listData)) {
 
 // Render Function 
 return (
-    <Box sx={{border: 'solid 1px'}}>
-        <Typography variant='h4'>{props.title}</Typography>
-        {skillList}
+    <Box sx={{}}>
+        <Paper elevation={4}>
+            <Box sx={{p: 2}}>
+                <Typography variant='h4'>{props.title}</Typography>
+                {skillList}
+            </Box>
+        </Paper>
     </Box>
 )
 }

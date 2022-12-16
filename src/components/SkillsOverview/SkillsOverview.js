@@ -14,13 +14,13 @@ let programmingSkills = {
 // Render Function 
 return (
     <Box>
-        <Grid container>
-            <Grid xs={12} md={6} item> 
+        <Grid container spacing={4}>
+            <Grid xs={12} sm={12} md={4} item> 
                 <SkillList title="Programmierkenntnisse" listData={programmingSkills}/>
             </Grid>
 
-            <Grid xs={12} md={6} item> 
-                <SkillList title="Programmierkenntnisse" listData={programmingSkills}/>
+            <Grid xs={12} sm={12} md={4} item> 
+                <SkillList title="Werkzeuge" listData={programmingSkills}/>
             </Grid>
 
         </Grid>

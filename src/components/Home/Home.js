@@ -11,6 +11,7 @@ return (
 <Box>
     <h1>Home</h1>
     <SkillsOverview />
+
 </Box>
 
 )
