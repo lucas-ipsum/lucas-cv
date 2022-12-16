@@ -3,6 +3,7 @@ import React from 'react'
 import { Box, Paper, Grid, Divider } from '@mui/material'; 
 import data from '../../data/cvTimeline';
 import TimeLineIcon from './TimeLineItemComponents/TimeLineIcon';
+import TimeLineDate from './TimeLineItemComponents/TimeLineDate';
 
 function TimeLineItem(props) {
 var title = `Wirtschaftsinformatik B.Sc.` ;
@@ -11,7 +12,7 @@ return (
     <Box>
         <Grid container>
         <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineIcon />
+                <TimeLineDate />
             </Grid>
             <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
                 <TimeLineIcon />

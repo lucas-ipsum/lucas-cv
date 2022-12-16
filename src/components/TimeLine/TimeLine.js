@@ -10,7 +10,6 @@ function TimeLine(props) {
 return (
     <Box>
         <Box sx={style}>
-        Timeline
             <TimeLineItem />
         </Box>
     </Box>
