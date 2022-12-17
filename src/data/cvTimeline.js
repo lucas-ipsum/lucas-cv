@@ -1,12 +1,19 @@
 const data = [
     {
-        title: 'Test1',
-        date: '17. März 2017'
+        title: 'Beginn Wirtschaftsinformatik B.Sc',
+        date: '17. März 2017',
+        category: 'university'
     },
     {
-        title: 'Test1',
-        date: '17. März 2017'
-    }
+        title: 'Beginn Betriebliche Umweltinformatik M.Sc,',
+        date: '17. März 2017',
+        category: 'university'
+    },
+    {
+        title: 'IT-Support',
+        date: '17. März 2017',
+        category: 'job'
+    },
 ]
 
 export default data; 

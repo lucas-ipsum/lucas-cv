@@ -8,19 +8,21 @@ import TimeLineDate from './TimeLineItemComponents/TimeLineDate';
 import TimeLineEntry from './TimeLineItemComponents/TimeLineEntry';
 
 function TimeLineItem(props) {
+console.log('hi')
+console.log(props)
 var title = `Wirtschaftsinformatik B.Sc.` ;
 // Render Function 
 return (
     <Box>
         <Grid container>
         <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineDate />
+                <TimeLineDate date={props.date} />
             </Grid>
             <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineIcon />
+                <TimeLineIcon category={props.category}/>
             </Grid>
             <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineEntry />
+                <TimeLineEntry title={props.title}/>
             </Grid>
             <Grid item xs={6}>
                 <Divider sx={{height: '50px', borderColor:'#000000' }} orientation='vertical' /> 

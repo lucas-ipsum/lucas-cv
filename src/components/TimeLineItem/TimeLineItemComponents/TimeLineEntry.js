@@ -9,7 +9,7 @@ return (
     <Box sx={{
         lineHeight: '58px'
     }}>
-        {entry}
+        {props.title}
     </Box>
 )
 }
