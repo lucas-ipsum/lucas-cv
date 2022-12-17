@@ -2,8 +2,7 @@ import React from 'react'
 import { Box } from '@mui/material';
 
 function TimeLineDate (props) {
-var date = '10. August 2013';
-console.log(props)
+
 
 // Render Function 
 return (

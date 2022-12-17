@@ -8,15 +8,13 @@ import TimeLineDate from './TimeLineItemComponents/TimeLineDate';
 import TimeLineEntry from './TimeLineItemComponents/TimeLineEntry';
 
 function TimeLineItem(props) {
-console.log('hi')
-console.log(props)
-var title = `Wirtschaftsinformatik B.Sc.` ;
+
 // Render Function 
 return (
     <Box>
         <Grid container>
         <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineDate date={props.date} />
+                <TimeLineDate date={props.beginDate} />
             </Grid>
             <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
                 <TimeLineIcon category={props.category}/>
