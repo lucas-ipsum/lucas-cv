@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 function TimeLineEntry (props) {
 var entry = 'Wirtschaftsinformatik B.Sc.';
@@ -9,7 +9,8 @@ return (
     <Box sx={{
         lineHeight: '58px'
     }}>
-        {props.title}
+        <Typography variant='body1' paragraph={true}>{props.title}</Typography>
+        
     </Box>
 )
 }

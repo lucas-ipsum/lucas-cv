@@ -14,7 +14,7 @@ return (
     <Box>
         <Grid container>
         <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineDate date={props.beginDate} />
+                <TimeLineDate beginDate={props.beginDate} endDate={props.endDate}/>
             </Grid>
             <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
                 <TimeLineIcon category={props.category}/>

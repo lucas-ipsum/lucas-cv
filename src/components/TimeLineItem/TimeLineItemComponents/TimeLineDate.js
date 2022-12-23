@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 
 function TimeLineDate (props) {
 
@@ -9,7 +9,7 @@ return (
     <Box sx={{
         lineHeight: '58px'
     }}>
-        {props.date}
+        <Typography>{props.beginDate} - {props.endDate}</Typography> 
     </Box>
 )
 }
