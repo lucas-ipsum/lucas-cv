@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '@mui/material'
+import { Box, IconButton } from '@mui/material'
 // Icons 
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
@@ -18,7 +18,9 @@ if (props.category == 'university') {
 // Render Function 
 return (
     <Box sx={{height: '58px'}}>
+        <IconButton>
         {icon}
+        </IconButton>
     </Box>
 )
 }

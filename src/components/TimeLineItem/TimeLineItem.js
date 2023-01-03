@@ -29,7 +29,7 @@ return (
                 <TimeLineEntry title={props.title}/>
             </Grid>
             <Grid item xs={6}>
-                <Divider sx={{height: '60px', borderColor:'#000000' }} orientation='vertical' /> 
+                <Divider sx={{height: '60px', borderColor:'#000000', transform: 'translateY(8px)' }} orientation='vertical' /> 
             </Grid>
 
         </Grid>
