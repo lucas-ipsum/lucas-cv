@@ -7,9 +7,13 @@ function TimeLineDate (props) {
 // Render Function 
 return (
     <Box sx={{
-        lineHeight: '58px'
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center'
     }}>
-        <Typography>{props.beginDate} - {props.endDate}</Typography> 
+        <Typography sx={{lineHeight: '58px', transform: 'translateY(8px)'}}>
+            {props.beginDate} - {props.endDate}
+        </Typography> 
     </Box>
 )
 }

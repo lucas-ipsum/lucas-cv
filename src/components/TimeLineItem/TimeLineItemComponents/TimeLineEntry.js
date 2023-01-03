@@ -7,9 +7,14 @@ var entry = 'Wirtschaftsinformatik B.Sc.';
 // Render Function 
 return (
     <Box sx={{
-        lineHeight: '58px'
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'center'
+
     }}>
-        <Typography variant='body1' paragraph={true}>{props.title}</Typography>
+        <Typography sx={{lineHeight: '58px', transform: 'translateY(8px)'}} variant='body1' paragraph={true}>
+            {props.title}
+        </Typography>
         
     </Box>
 )
