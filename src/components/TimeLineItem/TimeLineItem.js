@@ -13,17 +13,23 @@ function TimeLineItem(props) {
 return (
     <Box>
         <Grid container>
-        <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
+        <Grid item xs={5} sm={4} sx={{display: 'flex', justifyContent: 'center' }}>
                 <TimeLineDate beginDate={props.beginDate} endDate={props.endDate}/>
             </Grid>
-            <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
+            <Grid item xs={2} sm={4} sx={{display: 'flex', justifyContent: 'center' }}>
                 <TimeLineIcon category={props.category}/>
             </Grid>
-            <Grid item xs={4} sx={{display: 'flex', justifyContent: 'center' }}>
+            <Grid item xs={5} sm={4} 
+                sx={{
+                    display: 'flex',
+                    textAlign:'center', 
+                    justifyContent: 'center', 
+                    height: '58px'
+                 }}>
                 <TimeLineEntry title={props.title}/>
             </Grid>
             <Grid item xs={6}>
-                <Divider sx={{height: '50px', borderColor:'#000000' }} orientation='vertical' /> 
+                <Divider sx={{height: '60px', borderColor:'#000000' }} orientation='vertical' /> 
             </Grid>
 
         </Grid>

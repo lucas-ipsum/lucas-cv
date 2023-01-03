@@ -17,7 +17,7 @@ if (props.category == 'university') {
 }
 // Render Function 
 return (
-    <Box>
+    <Box sx={{height: '58px'}}>
         {icon}
     </Box>
 )
