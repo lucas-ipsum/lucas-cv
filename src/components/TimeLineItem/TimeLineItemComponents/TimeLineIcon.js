@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, IconButton } from '@mui/material'
 // Icons 
 import SchoolIcon from '@mui/icons-material/School';
 import WorkIcon from '@mui/icons-material/Work';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
+import TimeLineDialogWindow from '../../TimeLineDialogWindow/TimeLineDialogWindow';
 
 function TimeLineIcon (props) {
 var icon; 
+const [openWindow, setOpenWindow] = useState(false);
 
 if (props.category == 'university') {
     icon = <SchoolIcon sx={{fontSize: '40px', border: 1, borderRadius: '50%', p:1 }}/>
@@ -15,13 +17,27 @@ if (props.category == 'university') {
 }  else if (props.category == 'ehrenamt') {
     icon = <Diversity3Icon sx={{fontSize: '40px', border: 1, borderRadius: '50%', p:1 }}/>
 }
+
+console.log(props)
+// Event Listeners 
+const btnClicked = (e) => {
+    setOpenWindow(true);
+    console.log(e.target);
+} 
+const onClose = () => {
+    setOpenWindow(false);
+}
 // Render Function 
 return (
-    <Box sx={{height: '58px'}}>
-        <IconButton>
-        {icon}
-        </IconButton>
+    <Box>
+        {openWindow ? <TimeLineDialogWindow onClose={onClose} open={openWindow} title={props.id}/> : null}
+        <Box sx={{height: '58px'}}>
+            <IconButton onClick={btnClicked}>
+                {icon}
+            </IconButton>
+        </Box>
     </Box>
+
 )
 }
 

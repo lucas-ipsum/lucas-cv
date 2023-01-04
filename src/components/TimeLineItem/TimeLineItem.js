@@ -8,7 +8,6 @@ import TimeLineDate from './TimeLineItemComponents/TimeLineDate';
 import TimeLineEntry from './TimeLineItemComponents/TimeLineEntry';
 
 function TimeLineItem(props) {
-
 // Render Function 
 return (
     <Box>
@@ -17,7 +16,7 @@ return (
                 <TimeLineDate beginDate={props.beginDate} endDate={props.endDate}/>
             </Grid>
             <Grid item xs={2} sm={4} sx={{display: 'flex', justifyContent: 'center' }}>
-                <TimeLineIcon category={props.category}/>
+                <TimeLineIcon category={props.category} id={props.title}/>
             </Grid>
             <Grid item xs={5} sm={4} 
                 sx={{
