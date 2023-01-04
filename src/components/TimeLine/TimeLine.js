@@ -32,7 +32,8 @@ for (let i = 0; i < data.length; i++) {
 data.sort((a, b) => a.beginDate - b.beginDate);
 
 // Call TimeLineItem Components
-for (let i = data.length - 1; i > 0; i--) {
+for (let i = data.length - 1; i >= 0; i--) {
+    console.log(data[i].title)
     var beginDate = formatDate(data[i].beginDate)
     var endDate = formatDate(data[i].endDate)
     // Component Array

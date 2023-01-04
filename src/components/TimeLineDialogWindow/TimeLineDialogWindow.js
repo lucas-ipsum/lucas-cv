@@ -1,8 +1,9 @@
-import { Dialog, DialogTitle, List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
+import { Dialog, DialogTitle, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import LocationCityIcon from '@mui/icons-material/LocationCity';
+import TopicIcon from '@mui/icons-material/Topic';
 
 function TimeLineDialogWindow(props) {
 
@@ -16,6 +17,7 @@ return (
             <DialogTitle>{props.title}</DialogTitle>
             <Box>
                 <List>
+                    {/* ### Date ### */}
                     <ListItem>
                         <ListItemIcon>
                             <CalendarMonthIcon />
@@ -24,6 +26,7 @@ return (
                             {props.beginDate} - {props.endDate}
                         </ListItemText>
                     </ListItem>
+                    {/* ### Institution ### */}
                     <ListItem>
                         <ListItemIcon>
                             <LocationCityIcon />
@@ -32,9 +35,14 @@ return (
                             {props.institution}
                         </ListItemText>
                     </ListItem>
-                    <ListItem>Test</ListItem>
-                    <ListItem>Test</ListItem>
+                    {/* ### Institution ### */}
+                    <ListSubheader>Schwerpunkte: </ListSubheader>
+                    <ul>
+                        <li>TEst1</li>
+                        <li>TEst2</li>
+                        <li>TEst3</li>
 
+                    </ul>
                 </List>
             </Box>
 
@@ -44,3 +52,15 @@ return (
 }
 
 export default TimeLineDialogWindow; 
+
+/**
+ *                     <ListItem>
+                        <ListItemIcon>
+                            <TopicIcon />
+                        </ListItemIcon>
+                        <ListItemText>
+                            <Typography>Schwerpunkte: </Typography>
+                            
+                        </ListItemText>
+                    </ListItem>
+ */
