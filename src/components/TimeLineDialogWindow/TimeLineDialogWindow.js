@@ -10,6 +10,13 @@ function TimeLineDialogWindow(props) {
 const handleClose = () => {
     props.onClose();
 }
+// Loop Focus Areas 
+let listFocusAreas = [];
+if (props.data.focusAreas) {
+    for (let i = 0; i < props.data.focusAreas.length; i++) {
+        listFocusAreas.push(<li>{props.data.focusAreas[i]}</li>)
+    }
+}
 
 return (
     <Box>
@@ -38,6 +45,7 @@ return (
                     {/* ### Institution ### */}
                     <ListSubheader>Schwerpunkte: </ListSubheader>
                     <ul>
+                        {listFocusAreas}
                         <li>TEst1</li>
                         <li>TEst2</li>
                         <li>TEst3</li>

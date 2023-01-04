@@ -5,7 +5,8 @@ const data = [
         date: '17. März 2017',
         beginDate: '2015-10',
         endDate: '2019-09',
-        category: 'university'
+        category: 'university',
+        focusAreas: ['Informationssysteme', 'Datenbanken']
     },
     {
         title: 'Betriebliche Umweltinformatik M.Sc.',

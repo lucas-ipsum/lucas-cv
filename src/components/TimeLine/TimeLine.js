@@ -37,7 +37,7 @@ for (let i = data.length - 1; i >= 0; i--) {
     var beginDate = formatDate(data[i].beginDate)
     var endDate = formatDate(data[i].endDate)
     // Component Array
-    timeLineItems.push(<TimeLineItem title={data[i].title} endDate={endDate} beginDate={beginDate} institution={data[i].institution} category={data[i].category} />)    
+    timeLineItems.push(<TimeLineItem title={data[i].title} endDate={endDate} beginDate={beginDate} institution={data[i].institution} category={data[i].category} data={data[i]}/>)    
 }
 
 // Render Function 
