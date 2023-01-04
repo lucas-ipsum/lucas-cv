@@ -1,6 +1,7 @@
 const data = [
     {
         title: 'Wirtschaftsinformatik B.Sc.',
+        institution: 'Georg-August Universität Göttingen',
         date: '17. März 2017',
         beginDate: '2015-10',
         endDate: '2019-09',
@@ -8,6 +9,7 @@ const data = [
     },
     {
         title: 'Betriebliche Umweltinformatik M.Sc.',
+        institution: 'Hochschule für Technik und Wirtschaft Berlin',
         date: '17. März 2017',
         beginDate: '2019-10',
         endDate: '2023-01',
@@ -15,6 +17,7 @@ const data = [
     },
     {
         title: 'IT-Support',
+        institution: 'Ethnologisches Institut Göttingen',
         date: '17. März 2017',
         beginDate: '2018-04',
         endDate: '2019-09',
@@ -22,6 +25,7 @@ const data = [
     },
     {
         title: 'Studentische Hilfskraft Webprogrammierung',
+        institution: 'Foschungsgruppe für Solarspeichersysteme (HTW Berlin)',
         date: '17. März 2017',
         beginDate: '2020-11',
         endDate: '2022-10',
@@ -29,6 +33,7 @@ const data = [
     },
     {
         title: 'Abitur',
+        institution: 'IGS Osterholz-Scharmbeck',
         date: '17. März 2017',
         beginDate: '2011-08',
         endDate: '2014-07',
@@ -36,6 +41,7 @@ const data = [
     },
     {
         title: 'Ehrenamt Greenpeace',
+        institution: 'Greenpeace Göttingen',
         date: '17. März 2017',
         beginDate: '2017-04',
         endDate: '2019-09',

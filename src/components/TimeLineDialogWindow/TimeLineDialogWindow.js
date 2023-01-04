@@ -2,6 +2,7 @@ import { Dialog, DialogTitle, List, ListItem, ListItemIcon, ListItemText } from 
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import LocationCityIcon from '@mui/icons-material/LocationCity';
 
 function TimeLineDialogWindow(props) {
 
@@ -18,6 +19,14 @@ return (
                     <ListItem>
                         <ListItemIcon>
                             <CalendarMonthIcon />
+                        </ListItemIcon>
+                        <ListItemText>
+                            {props.beginDate} - {props.endDate}
+                        </ListItemText>
+                    </ListItem>
+                    <ListItem>
+                        <ListItemIcon>
+                            <LocationCityIcon />
                         </ListItemIcon>
                         <ListItemText>
                             {props.beginDate} - {props.endDate}
