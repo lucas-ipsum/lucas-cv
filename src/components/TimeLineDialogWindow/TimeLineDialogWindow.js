@@ -29,7 +29,7 @@ return (
                             <LocationCityIcon />
                         </ListItemIcon>
                         <ListItemText>
-                            {props.beginDate} - {props.endDate}
+                            {props.institution}
                         </ListItemText>
                     </ListItem>
                     <ListItem>Test</ListItem>

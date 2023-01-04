@@ -30,7 +30,7 @@ const onClose = () => {
 // Render Function 
 return (
     <Box>
-        {openWindow ? <TimeLineDialogWindow onClose={onClose} open={openWindow} title={props.id} beginDate={props.beginDate} endDate={props.endDate}/> : null}
+        {openWindow ? <TimeLineDialogWindow onClose={onClose} open={openWindow} title={props.id} beginDate={props.beginDate} endDate={props.endDate} institution={props.institution}/> : null}
         <Box sx={{height: '58px'}}>
             <IconButton onClick={btnClicked}>
                 {icon}
