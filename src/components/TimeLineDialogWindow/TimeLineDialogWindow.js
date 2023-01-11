@@ -1,23 +1,34 @@
 import { Dialog, DialogTitle, List, ListItem, ListItemIcon, ListItemText, ListSubheader, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react'
+
+// Icons 
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import LocationCityIcon from '@mui/icons-material/LocationCity';
 import TopicIcon from '@mui/icons-material/Topic';
+import LanguageIcon from '@mui/icons-material/Language';
 
 function TimeLineDialogWindow(props) {
+let website; 
+let focusAreas; 
+// Check for props 
+if (props.data.website) {website = props.data.website};
+if (props.data.focusAreas) {focusAreas = props.data.focusAreas};
 
-const handleClose = () => {
-    props.onClose();
-}
 // Loop Focus Areas 
 let listFocusAreas = [];
-if (props.data.focusAreas) {
-    for (let i = 0; i < props.data.focusAreas.length; i++) {
-        listFocusAreas.push(<li>{props.data.focusAreas[i]}</li>)
+if (focusAreas) {
+    for (let i = 0; i < focusAreas.length; i++) {
+        listFocusAreas.push(<li>{focusAreas[i]}</li>)
     }
 }
 
+// Event Handler 
+const handleClose = () => {
+    props.onClose();
+}
+
+// Render Function 
 return (
     <Box>
         <Dialog onClose={handleClose} open={props.open}>
@@ -42,15 +53,29 @@ return (
                             {props.institution}
                         </ListItemText>
                     </ListItem>
-                    {/* ### Institution ### */}
+                    {
+                    /* ### Website ### */
+                    website && 
+                        <ListItem>
+                            <ListItemIcon>
+                                <LanguageIcon />
+                            </ListItemIcon>
+                            <ListItemText>
+                                <a href={website}>Website</a>
+                            </ListItemText>
+                        </ListItem>
+                    }
+                    {/* ### Schwerpunkte ### */}
+                    {
+                    focusAreas && 
+                    <>
                     <ListSubheader>Schwerpunkte: </ListSubheader>
                     <ul>
                         {listFocusAreas}
-                        <li>TEst1</li>
-                        <li>TEst2</li>
-                        <li>TEst3</li>
-
                     </ul>
+                    </>                     
+                    }
+
                 </List>
             </Box>
 
@@ -60,15 +85,3 @@ return (
 }
 
 export default TimeLineDialogWindow; 
-
-/**
- *                     <ListItem>
-                        <ListItemIcon>
-                            <TopicIcon />
-                        </ListItemIcon>
-                        <ListItemText>
-                            <Typography>Schwerpunkte: </Typography>
-                            
-                        </ListItemText>
-                    </ListItem>
- */
