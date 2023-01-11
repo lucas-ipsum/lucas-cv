@@ -12,7 +12,7 @@ return (
         justifyContent: 'center'
 
     }}>
-        <Typography sx={{lineHeight: '58px', transform: 'translateY(8px)'}} variant='body1' paragraph={true}>
+        <Typography sx={{transform: 'translateY(8px)'}} variant='body1' paragraph={true}>
             {props.title}
         </Typography>
         
