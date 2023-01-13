@@ -32,7 +32,7 @@ return (
     <Box>
         {openWindow ? <TimeLineDialogWindow onClose={onClose} open={openWindow} title={props.id} beginDate={props.beginDate} endDate={props.endDate} institution={props.institution} data={props.data}/> : null}
         <Box sx={{height: '58px'}}>
-            <IconButton onClick={btnClicked}>
+            <IconButton color='primary' onClick={btnClicked}>
                 {icon}
             </IconButton>
         </Box>
