@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 // MUI 
 import { Box } from '@mui/material';
 import style from '../sytle/style';
@@ -8,7 +8,7 @@ import data from '../../data/cvTimeline';
 
 function TimeLine(props) {
 var timeLineItems = []; 
-
+var lastElement = false; 
 // Helper Function 
 // Date to String Format 
 const formatDate = (date) => {
@@ -33,11 +33,15 @@ data.sort((a, b) => a.beginDate - b.beginDate);
 
 // Call TimeLineItem Components
 for (let i = data.length - 1; i >= 0; i--) {
-    console.log(data[i].title)
+    if (i == 0) {
+        lastElement = true; 
+    } else {
+        lastElement = false; 
+    }
     var beginDate = formatDate(data[i].beginDate)
     var endDate = formatDate(data[i].endDate)
     // Component Array
-    timeLineItems.push(<TimeLineItem title={data[i].title} endDate={endDate} beginDate={beginDate} institution={data[i].institution} category={data[i].category} data={data[i]}/>)    
+    timeLineItems.push(<TimeLineItem title={data[i].title} endDate={endDate} beginDate={beginDate} institution={data[i].institution} category={data[i].category} data={data[i]} lastElement={lastElement}/>)    
 }
 
 // Render Function 

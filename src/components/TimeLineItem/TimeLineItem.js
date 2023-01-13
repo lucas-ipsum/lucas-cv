@@ -8,6 +8,7 @@ import TimeLineDate from './TimeLineItemComponents/TimeLineDate';
 import TimeLineEntry from './TimeLineItemComponents/TimeLineEntry';
 
 function TimeLineItem(props) {
+// let lastElement = props.lastElement; 
 // Render Function 
 return (
     <Box>
@@ -27,9 +28,15 @@ return (
                  }}>
                 <TimeLineEntry title={props.title}/>
             </Grid>
-            <Grid item xs={6}>
-                <Divider sx={{height: '60px', borderColor:'#000000', transform: 'translateY(8px)' }} orientation='vertical' /> 
-            </Grid>
+            {
+                props.lastElement == false ? 
+                <Grid item xs={6}>
+                    <Divider sx={{height: '60px', borderColor:'#000000', transform: 'translateY(8px)' }} orientation='vertical' /> 
+                </Grid>
+                : 
+                null 
+            }
+
 
         </Grid>
     </Box>
