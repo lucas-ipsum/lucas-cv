@@ -4,6 +4,7 @@ import SkillList from '../SkillList/SkillList';
 import SkillsOverview from '../SkillsOverview/SkillsOverview';
 import Hero from '../Hero/Hero';
 import TimeLine from '../TimeLine/TimeLine';
+import Footer from '../Footer/Footer';
 
 function Home(props) {
 
@@ -14,6 +15,7 @@ return (
     <Hero />
     <SkillsOverview />
     <TimeLine />
+    <Footer />
 </Box>
 
 )
