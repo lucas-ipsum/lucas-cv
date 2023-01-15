@@ -31,7 +31,7 @@ return (
             {
                 props.lastElement == false ? 
                 <Grid item xs={6}>
-                    <Divider sx={{height: '60px', borderColor:'#000000', transform: 'translateY(8px)' }} orientation='vertical' /> 
+                    <Divider sx={{height: '60px', borderColor:'#696969', transform: 'translateY(8px)' }} orientation='vertical' /> 
                 </Grid>
                 : 
                 null 
